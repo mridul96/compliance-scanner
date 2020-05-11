@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/input.css" type="text/css">
+    <link rel="icon" href="/static/title.png" type="image/png" sizes="16x16">
+  </head>
+  <body>
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+      <div class="login">
+        <div class="login-screen">
+          <div align="right" class="app-title">
+              <h2>S3 Scanner</h2>
+          </div>
+          <div class = "loginContainer">
+            <div class="login-form">
+              <div class="control-group">
+                <label class="login-field-icon fui-user" for="login-name"></label>
+                <input type="email" class="login-field" placeholder="Email" name="EMAIL" id="EMAIL"/>
+              </div>
+              <div class="control-group">
+                <label class="login-field-icon fui-user" for="login-name"></label>
+                <input type="text" class="login-field" placeholder="First Name" name="FNAME" id="FNAME"/>
+              </div>
+              <div class="control-group">
+                <label class="login-field-icon fui-lock" for="login-pass"></label>
+                <input type="text" class="login-field" placeholder="Last Name" name="LNAME" id="LNAME"/>
+              </div>
+              <div class="control-group">
+                <label class="btn" for="files">Upload File</label>
+                <input type="file" style="display:none;" name="Upload" id="files"/>
+              </div>
+              <div class="control-group">
+                <button type="submit" class="btn">Submit</button>
+              </div>
+          </div>
+            <div class = "inputArea">
+              <div class="dashboardLabel">
+                <label class="textLabel" for="IBUCKET">Inclusive Bucket</label>
+                <a href="/dashboard" target="_blank" >
+                  Dashboard
+                </a>
+              </div>
+              <textarea class="textField" id="IBUCKET" name="IBUCKET">{{TEXTI}}</textarea>
+              <br/>
+              <label class="textLabel" for="EBUCKET">Exclusive Bucket</label>
+              <textarea class="textField" id="EBUCKET" name="EBUCKET">{{TEXTE}}</textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

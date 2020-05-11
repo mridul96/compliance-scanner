@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/output.css" type="text/css">
+    <link rel="icon" href="/static/title.png" type="image/png" sizes="16x16">
+  </head>
+  <body>
+    <form action="/dashboard" method="POST">
+      <div class="main">
+        <div class="header" align="center">
+          <h2 class="topic">{{HEADER}}</h2>
+          <div><textarea class ="textContainer" readonly>{{TEXT}}</textarea></div>
+        </div>
+        <div class="container">
+          <div class="textdiv" align="center">
+              <input type="submit" name="Request" value="Request" class="subbtn">
+          </div>
+          <div class="textdiv" align="center">
+              <input type="submit" name="Request" value="Result" class="subbtn">
+          </div>
+          <div class="textdiv" align="center">
+              <input type="submit" name="Request" value="Clean" class="subbtn execute">
+          </div>
+          <div class="textdiv" align="center">
+            <a href="/getDownload" download="" target="_blank">
+              <input type="button" name="Request" value="Download" class="subbtn download">
+            </a>
+          </div>
+          <div class="textdiv" align="center">
+              <input type="submit" name="Request" value="Execute" class="subbtn execute">
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
